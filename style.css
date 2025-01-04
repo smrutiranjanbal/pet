@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #d4ff00 ; 
+    color: #d4ff00; 
     transform: scale(1.1);
 }
 
@@ -63,8 +63,8 @@ nav ul li .sign-in-btn {
 }
 
 nav ul li .sign-in-btn:hover {
-    background-color:#4CAF50 ; 
-    color:#d4ff00; 
+    background-color: #4CAF50; 
+    color: #d4ff00; 
 }
 
 /* Hero Section */
@@ -95,8 +95,8 @@ nav ul li .sign-in-btn:hover {
 }
 
 .cta-btn:hover {
-    background-color:#126d17 ; 
-    color:#d4ff00; 
+    background-color: #126d17; 
+    color: #d4ff00; 
 }
 
 /* Featured Pets Section */
@@ -192,6 +192,83 @@ nav ul li .sign-in-btn:hover {
     background-color: #3e8e41;
 }
 
+/* Learn More About Pets Section */
+.pet-articles {
+    padding: 60px 20px;
+    background-color: #f1f8e9;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pet-articles h2 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+.pet-articles .pet-article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pet-articles .pet-article h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.pet-articles .pet-article a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pet-articles .pet-article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pet-articles .pet-article:hover h3 {
+    color: #126d17;  /* Darker green for the title */
+}
+
+.pet-articles .pet-article:hover a {
+    background-color: #126d17;  /* Dark green for the link */
+    transform: scale(1.05);
+}
+
+.pet-articles:hover {
+    background-color: #e8f5e9;  /* Light green background on hover */
+    transform: translateY(-5px);
+}
+
+.pet-articles h2:hover {
+    color: #126d17;  /* Dark green on hover */
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
 /* Footer Section */
 footer {
     background-color: #4CAF50;
@@ -256,3 +333,4 @@ footer .social-icon.twitter:hover {
 footer .social-icon img:hover {
     transform: scale(1.1);
 }
+
