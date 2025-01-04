@@ -1,106 +1,336 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Pet Adoption Center</title>
-    <link rel="stylesheet" href="style02.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>Pet Adoption Center</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index01.html" class="sign-in-btn">Sign In</a></li>
-            </ul>
-        </nav>
-    </header>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fafafa; /* Light background for the whole page */
+    text-align: center;
+}
 
-    <section id="about">
-        <div class="about-container">
-            <h2>About Us</h2>
-            <p>Welcome to the Pet Adoption Center! We are dedicated to finding loving homes for pets in need. Whether you're looking to adopt a dog, cat, or any other pet, we strive to make the adoption process as simple and rewarding as possible.</p>
-            <p>Our mission is to provide a safe and welcoming environment for pets awaiting adoption, while helping them find their forever homes. We believe that every pet deserves a loving family, and we are here to connect you with your new best friend!</p>
-        </div>
-    </section>
+header {
+    background-color: #408f42 ; 
+    color: white;
+    padding: 0 40px; /* Adjust padding to ensure the height remains consistent */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px; /* Set the height of the navbar to 60px */
+}
 
-    <!-- Our Mission Section -->
-    <section id="mission" class="mission-section">
-        <h2>Our Mission</h2>
-        <p>Our goal is to create a world where every pet has a loving home. We provide shelter, care, and adoption services to animals in need, while promoting responsible pet ownership in our community.</p>
-    </section>
+header .logo h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
 
-    <!-- Our Values Section -->
-    <section id="values" class="values-section">
-        <h2>Our Values</h2>
-        <ul>
-            <li>Compassion: We treat every pet with love and care.</li>
-            <li>Community: We believe in the power of community to help animals.</li>
-            <li>Integrity: We are committed to ethical practices in everything we do.</li>
-            <li>Education: We strive to educate the public about responsible pet ownership.</li>
-        </ul>
-    </section>
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+}
 
-    <!-- Adoption Process Infographic Section -->
-    <section id="adoption-process" class="adoption-process">
-        <h2>Adoption Process</h2>
-        <div class="infographic">
-            <div class="step">
-                <img src="OIP (1).jpeg"alt="Step 1">
-                <p>Step 1: Browse Pets</p>
-            </div>
-            <div class="step">
-                <img src="38d161b01507a1e8dd1b8915af99dc2b.jpg"alt="Step 2">
-                <p>Step 2: Apply for Adoption</p>
-            </div>
-            <div class="step">
-                <img src="istockphoto-522600099-612x612.jpg" alt="Step 3">
-                <p>Step 3: Meet Your New Pet</p>
-            </div>
-            <div class="step">
-                <img src="pexels-photo-7474558.webp" alt="Step 4">
-                <p>Step 4: Complete the Adoption</p>
-            </div>
-        </div>
-    </section>
+nav ul li {
+    position: relative;
+}
 
-    <!-- Join Our Team Section -->
-    <section id="join-team" class="join-team">
-        <h2>Join Our Team</h2>
-        <p>If you're passionate about animals and want to help make a difference, consider joining our team! We are always looking for volunteers and staff to help us care for our pets and assist with adoption events.</p>
-        <a href="index.html" class="cta-btn">Contact Us to Join</a>
-    </section>
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    line-height: 60px; /* Vertically align text within the navbar */
+}
 
-    <!-- Frequently Asked Questions Section -->
-    <section id="faq" class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <h3>How do I adopt a pet?</h3>
-            <p>To adopt a pet, browse our available pets on the website, fill out an adoption application, and schedule a meeting with the pet of your choice. If everything goes well, we will complete the adoption process!</p>
-        </div>
-        <div class="faq-item">
-            <h3>What is the adoption fee?</h3>
-            <p>Our adoption fees vary depending on the pet, but they typically cover vaccinations, spaying/neutering, and other medical expenses.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Can I adopt a pet if I live in an apartment?</h3>
-            <p>Yes! We encourage pet adoption from all types of living situations. Some pets may be better suited for apartments, and we can help guide you in finding the right pet for your home.</p>
-        </div>
-    </section>
+nav ul li a:hover {
+    color: #d4ff00;
+    transform: scale(1.1);
+}
 
-    <footer id="contact">
-        <p>&copy; 2025 Pet Adoption Center | All Rights Reserved</p>
-        <div class="contact-info">
-            <p>Contact Us: <strong>+1 800 123 4567</strong> | Email: <strong>info@petadoptioncenter.com</strong></p>
-        </div>
-        <div class="social-links">
-            <a href="https://www.facebook.com/" class="social-icon facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
-            <a href="https://www.instagram.com/" class="social-icon instagram"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
-            <a href="https://www.youtube.com/" class="social-icon youtube"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"></a>
-        </div>
-    </footer>
-</body>
-</html>
+nav ul li .sign-in-btn {
+    background-color: #d4ff00;
+    color: #4CAF50;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li .sign-in-btn:hover {
+    background-color:#4CAF50 ; 
+    color:#d4ff00; 
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* About Us Section */
+#about {
+    background-color: #4CAF50; /* Set the background color to the same as the header */
+    color: white;  /* Ensure the text is white for readability */
+    padding: 50px 20px;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Our Mission Section */
+#mission {
+    background-color: #e6f7e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mission h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#mission p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Our Values Section */
+#values {
+    background-color: #f0f9f0;
+}
+
+#values h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#values ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    text-align: left;
+    margin: 10px;
+    max-width: 800px;
+}
+
+#values ul li {
+    margin: 12px 0;
+}
+
+/* Adoption Process Section */
+#adoption-process {
+    background-color: #ffffff;
+}
+
+#adoption-process h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.infographic {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.step {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0f9f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: scale(1.05);
+}
+
+.step img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.step p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Join Our Team Section */
+#join-team {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#join-team h2 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#join-team p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+#join-team .cta-btn {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#join-team .cta-btn:hover {
+    background-color: #388e3c;
+}
+
+/* FAQ Section */
+#faq {
+    background-color: #ffffff;
+}
+
+#faq h2 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.faq-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #e6f7e6;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+/* Footer Section */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 18px;
+    border-top: 4px solid #FFD700;
+}
+
+footer .contact-info {
+    margin-bottom: 20px;
+}
+
+footer .contact-info p {
+    font-size: 16px;
+}
+
+footer .social-links {
+    font-size: 18px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icon {
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+footer .social-icon img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icon:hover {
+    background-color: #418f38;
+    color: #4CAF50;
+}
+
+footer .social-icon.facebook:hover {
+    background-color: #418f38;
+}
+
+footer .social-icon.instagram:hover {
+    background-color: #418f38;
+}
+
+footer .social-icon.twitter:hover {
+    background-color: #418f38;
+}
+
+footer .social-icon img:hover {
+    transform: scale(1.1);
+}
