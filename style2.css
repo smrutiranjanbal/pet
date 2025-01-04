@@ -1,0 +1,32 @@
+body{
+    background-color: cadetblue;
+    margin: 0px;
+    border : 0px;
+    border-style: double;
+    position: absolute;
+    width: 100%;
+}
+.navar{
+    position: absolute;
+    top: 1%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0px;
+    background-color: rgba(19, 225, 232, 0);
+    border-color: black;
+    margin-left: 0px;
+}
+.navar a{
+    text-decoration:none ;
+    color: darkblue;
+    border: 3px;
+    border-radius: 8px;
+    padding: 4px;
+    
+}
+.navar :hover{
+    color: crimson;
+    background-color: rgb(255, 255, 255);
+}
